@@ -1,0 +1,112 @@
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.back:hover {
+  color: var(--heading);
+}
+
+.header {
+  position: relative;
+  padding: 2rem 0 2.25rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+/* Gradient accent bar over the detail header. */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--gradient);
+}
+
+.title {
+  margin: 1rem 0 0;
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-size: clamp(2.1rem, 5.5vw, 3.2rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  color: var(--heading);
+}
+
+.lead {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.lead :global(p) {
+  margin: 0;
+}
+
+.role {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.metaLine {
+  margin: 0.85rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 0.2rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+/* Cover image */
+
+.cover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  background: var(--card-border);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+}
+
+.coverImage {
+  object-fit: cover;
+}
